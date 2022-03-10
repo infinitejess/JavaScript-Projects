@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <script src="JS/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+	</head>
+	<body>
+        <!--Countdown timer, button, input and alert-->
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value=""  />
+        <button onclick="countdown()">Click here</button>
+        <p id="timer"></p>
+
+        <!-- Slideshow-->
+        <div class="slideshow-container">
+           
+            <!--Images and captions-->
+            <div class="mySlides fade">
+                <div class="numbertext"> 1 / 4 </div>
+                <img src="Images/img1.jpg" style="width:100%">
+                <div class="text"> Flowers</div> 
+             </div>
+
+             <div class="mySlides fade">
+                <div class="numbertext"> 2 / 4 </div>
+                <img src="Images/img2.jpg" style="width:100%">
+                <div class="text"> Angels</div> 
+             </div>
+
+             <div class="mySlides fade">
+                <div class="numbertext"> 3 / 4 </div>
+                <img src="Images/img3.jpg" style="width:100%">
+                <div class="text"> Colors</div> 
+             </div>
+
+             <div class="mySlides fade">
+                <div class="numbertext"> 4 / 4 </div>
+                <img src="Images/img4.jpg" style="width:100%">
+                <div class="text"> Hands</div> 
+             </div>
+
+
+                <!--Next and previous buttons0-->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!--Dots/circles--> 
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+
+
+
+
+
+	</body>
+</html>
